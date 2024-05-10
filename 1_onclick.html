@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <button onclick="printName()">Print First Name</button>
+    <button onclick="copy()">Copy</button>
+    <br />
+    <input id="myName" />
+    <input id="copyMyName" />
+    <br />
+    <input id="result" />
+
+    <script>
+      function printName() {
+        console.log(myName.value)
+      }
+      function copy() {
+        copyMyName.value = myName.value
+      }
+    </script>
+  </body>
+</html>

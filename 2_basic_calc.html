@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Number1:
+    <input id="number1" />
+    <br />
+    Number2:
+    <input id="number2" />
+    <br />
+    Result:
+    <input id="result" />
+    <br />
+    <button onclick="plus()">Add</button>
+    <button onclick="minus()">Minus</button>
+    <script>
+      function plus() {
+        result.value = +number1.value + +number2.value
+      }
+      function minus() {
+        result.value = +number1.value - +number2.value
+      }
+    </script>
+  </body>
+</html>

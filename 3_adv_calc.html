@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="result" style="width: 70px" />
+    <br /><br />
+    <button onclick="displayNum(1)">1</button>
+    <button onclick="displayNum(2)">2</button>
+    <button onclick="displayNum(3)">3</button>
+    <button onclick="plus()">+</button>
+    <br />
+    <button onclick="displayNum(4)">4</button>
+    <button onclick="displayNum(5)">5</button>
+    <button onclick="displayNum(6)">6</button>
+    <br />
+    <button onclick="displayNum(7)">7</button>
+    <button onclick="displayNum(8)">8</button>
+    <button onclick="displayNum(9)">9</button>
+    <button onclick="clearResult()">C</button>
+    <br />
+    <button onclick="displayNum(0)">0</button>
+    <button onclick="equals()">=</button>
+
+    <script>
+      let memory
+
+      function equals(params) {
+        result.value = +result.value + +memory
+      }
+      function displayNum(num) {
+        console.log('memory is:', memory)
+        if (result.value == 0) {
+          result.value = ''
+        }
+        result.value += num
+      }
+      function clearResult() {
+        result.value = 0
+      }
+      function plus() {
+        memory = result.value
+        console.log('memory is:', memory)
+        result.value = 0
+      }
+    </script>
+  </body>
+</html>
