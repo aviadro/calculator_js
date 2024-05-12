@@ -30,6 +30,7 @@
 
       function equals(params) {
         result.value = +result.value + +memory
+        memory = 0
       }
       function displayNum(num) {
         console.log('memory is:', memory)
@@ -40,6 +41,7 @@
       }
       function clearResult() {
         result.value = 0
+        memory = 0
       }
       function plus() {
         memory = result.value
